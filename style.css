@@ -1,0 +1,56 @@
+   /* Estilos da caixa de rolagem */
+   .scroll-container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    width: 800px; /* Largura visível da caixa */
+    overflow: hidden;
+    border: 2px solid #ccc;
+    position: relative;
+    left: 25%;
+    top: 40px;
+    padding: 15px;
+  }
+
+  .scroll-wrapper {
+    display: flex;
+    transition: transform 0.3s ease; /* Animação do scroll */
+  }
+
+  .scroll-item {
+    min-width: 800px; /* Cada item ocupa a largura da caixa */
+    height: 600px;
+    background-color: lightblue;
+    margin: 10px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border: 1px solid #999;
+  }
+
+  /* Estilos das setas */
+  .arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #ddd;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 2;
+    font-size: 1.2rem;
+  }
+
+  .arrow.left {
+    left: 0;
+  }
+
+  .arrow.right {
+    right: 0;
+  }
+  .quest{
+    background-color: red;
+  }

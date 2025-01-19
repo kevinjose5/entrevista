@@ -3,89 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
   <title>Cálculo de SOMA</title>
 </head>
 <body>
 
+  <div>
+    <h1>todas as questoes estão respondidas no quadro a baixo</h1>
+  </div>
+
+
+  <div class="scroll-container">
+
+    <button class="arrow left" id="prev">←</button>
+
+    <div class="scroll-wrapper" id="scrollWrapper">
+
+      <div class="scroll-item">
+        <h1>resposta da questão numero 1</h1>
+        <p id="resultado1"></p>
+      </div>
+
+      <div class="scroll-item">
+        <h1>resposta da questão 2: verificando numero</h1>
+        <p>Informe um número para verificar:</p>
+        <input type="number" id="numero" placeholder="Digite um número">
+        <button onclick="verificarFibonacci()">Verificar</button>
+        <p id="resultado2"></p>
+      </div>
+
+      <div class="scroll-item">
+        <h1> resposta 3: Relatório de Faturamento Mensal</h1>
+        <p id="resultado3"></p>
+      </div>
+
+      <div class="scroll-item">
+        <h1>resposta 4:Percentual de Representação do Faturamento</h1>
+        <p id="resultado4"></p>
+      </div>
+
+      <div class="scroll-item">
+        <h1>resposta 5: Inverter String</h1>
+        <label for="inputString">Digite uma string:</label>
+        <input type="text" id="inputString" placeholder="Digite aqui...">
+        <button onclick="inverterString()">Inverter</button>
+        <p id="resultado5"></p>
+      </div>
+
+    </div>
+    <button class="arrow right" id="next">→</button>
+  </div>
 
 
 
-  <h1>resposta da questão numero 1</h1>
-  <p id="resultado1"></p>
+  </div>
 
-<br>
-<br>
-<!-- inicio da questão 2 -->
-
-<h1>resposta da questão 2: verificando numero</h1>
-<p>Informe um número para verificar:</p>
-<input type="number" id="numero" placeholder="Digite um número">
-<button onclick="verificarFibonacci()">Verificar</button>
-<p id="resultado2"></p>
-  <!-- fim da questão 2 -->
-<br>
-<br>
-
-
-
-
-
-
-
-    <h1> resposta 3: Relatório de Faturamento Mensal</h1>
-    <p id="resultado3"></p>
+ 
   
     
-
-    <br>
-    <br>
-    <br>
-    <h1>resposta 4:Percentual de Representação do Faturamento</h1>
-    <p id="resultado4"></p>
-  
-    <script>
-      const faturamentoPorEstado = {
-        "SP": 67836.43,
-        "RJ": 36678.66,
-        "MG": 29229.88,
-        "ES": 27165.48,
-        "Outros": 19849.53
-      };
-  
-      function calcularPercentuais(faturamento) {
-        const faturamentoTotal = Object.values(faturamento).reduce((acc, valor) => acc + valor, 0);
-  
-        let resultadoHTML = `<strong>Faturamento Total:</strong> R$ ${faturamentoTotal.toFixed(2)}<br><br>`;
-        for (const estado in faturamento) {
-          const percentual = (faturamento[estado] / faturamentoTotal) * 100;
-          resultadoHTML += `${estado}: ${percentual.toFixed(2)}%<br>`;
-        }
-  
-        document.getElementById("resultado4").innerHTML = resultadoHTML;
-      }
-  
-      calcularPercentuais(faturamentoPorEstado);
-    </script>
-
-    <br><br><br>
-    <h1>resposta 5: Inverter String</h1>
-    <label for="inputString">Digite uma string:</label>
-    <input type="text" id="inputString" placeholder="Digite aqui...">
-    <button onclick="inverterString()">Inverter</button>
-    <p id="resultado5"></p>
-  
-    <script>
-      function inverterString() {
-        const input = document.getElementById("inputString").value;
-  
-        let stringInvertida = "";
-        for (let i = input.length - 1; i >= 0; i--) {
-          stringInvertida += input[i];
-        }
-  
-        document.getElementById("resultado5").innerText = `String invertida: ${stringInvertida}`;
-      }
-    </script>
 
 
 
@@ -93,5 +68,8 @@
 <script src="script1.js"></script>
 <script src="script2.js"></script>
 <script src="script3.js"></script>
+<script src="script4.js"></script>
+<script src="script5.js"></script>
+<script src="script_style.js"></script>
 </body>
 </html>
