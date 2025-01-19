@@ -1,3 +1,12 @@
+   body{
+    background: linear-gradient(to right, #6f10b9, #5a045b);
+   }
+   
+   
+   
+   
+   
+   
    /* Estilos da caixa de rolagem */
    .scroll-container {
     display: flex;
@@ -5,11 +14,15 @@
     position: relative;
     width: 800px; /* Largura visível da caixa */
     overflow: hidden;
-    border: 2px solid #ccc;
+    border: 2px solid #cccccc87;
     position: relative;
     left: 25%;
     top: 40px;
     padding: 15px;
+    background-color: rgb(56, 56, 56);
+    border-radius: 30px;
+    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.843);
+
   }
 
   .scroll-wrapper {
@@ -20,7 +33,7 @@
   .scroll-item {
     min-width: 800px; /* Cada item ocupa a largura da caixa */
     height: 600px;
-    background-color: lightblue;
+    background-color: rgb(157, 142, 175);
     margin: 10px 5px;
     display: flex;
     flex-direction: column;
@@ -29,6 +42,7 @@
     font-size: 1.5rem;
     font-weight: bold;
     border: 1px solid #999;
+    border-radius: 30px;
   }
 
   /* Estilos das setas */
@@ -42,15 +56,47 @@
     padding: 10px;
     z-index: 2;
     font-size: 1.2rem;
+    border-radius: 30px;
+    font-weight: 500;
   }
 
   .arrow.left {
     left: 0;
+    
+  }
+  .arrow.left:hover{
+    box-shadow: 10px 4px 6px rgba(0, 0, 0, 0.843);
+
   }
 
   .arrow.right {
     right: 0;
+   
   }
+  .arrow.right:hover{
+    box-shadow: -10px 4px 6px rgba(0, 0, 0, 0.843);
+
+  }
+
   .quest{
     background-color: red;
   }
+  #titulo{
+   
+
+    width: 1200px;
+    font-family: "Jersey 15", serif;
+    font-size: 30px;
+   
+    font-style: normal;
+    color: #baa3c3;
+
+    background: linear-gradient(to right, #3c0235, #820284);
+    display: flex;
+    box-shadow: 20px 14px 3px rgba(0, 0, 0, 0.843);
+   
+  }
+
+  
+
+  
