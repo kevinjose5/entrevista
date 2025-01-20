@@ -1,6 +1,12 @@
    body{
     background: linear-gradient(to right, #6f10b9, #5a045b);
+    font-family: "Nunito", serif;
+    font-weight: 100;
+    font-style: normal;
+
    }
+
+
    
    
    
@@ -61,6 +67,7 @@
   }
 
   .arrow.left {
+    position: absolute;
     left: 0;
     
   }
@@ -82,21 +89,30 @@
     background-color: red;
   }
   #titulo{
-   
-
     width: 1200px;
     font-family: "Jersey 15", serif;
     font-size: 30px;
-   
+   padding-left: 30px;
     font-style: normal;
     color: #baa3c3;
-
     background: linear-gradient(to right, #3c0235, #820284);
     display: flex;
     box-shadow: 20px 14px 3px rgba(0, 0, 0, 0.843);
-   
   }
-
+.entinput{
+    width: 250px;
+    height: 25px;
+    border-radius: 30px;
+    background-color: #c9b3c6;
+}
   
-
+.bton{
+    width: 100px;
+    height: 25px;
+    border-radius: 20px;
+    background-color: #e1a3d6;
+}
+.bton:hover{
+    box-shadow: 3px 2px 0px rgba(0, 0, 0, 0.843);
+}
   
